@@ -1,0 +1,87 @@
+/* title: css
+by: Abe Kowitz
+class: Mobile Interfaces and Usability 1209
+*/
+
+
+html {
+	padding:10px;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+body {
+	background-color:white;
+	padding: 10px;
+	border-radius: 30px;
+	box-shadow: -10px 10px 5px gray;
+
+}
+
+#index{
+	max-width: 90%;
+	margin: 2px 2px;
+	border: 1px solid #000085;
+	border-radius: 15px;
+	background-color: light yellow;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1px;
+	font-family: arial;
+	text-align: center;
+	box-shadow: -5px 5px 5px gray;
+}
+ 
+
+h2 {
+	margin: 10px 5px;
+	border: 1px solid #000085;
+	padding: 10px;
+	font-variant: small-caps;
+	font-size: large;
+	border-radius: 15px;
+	background: #0099ff;
+
+}
+
+li {
+	margin: 10px 15px;
+	padding: 5px;
+	font-family: "Lucida Grande";
+	line-height: 1.5em;
+	background-color: white;
+	list-style-type: none;
+
+}
+
+h3 {
+	margin: 10px 5px;
+	border: 1px solid #000085;
+	padding: 10px;
+	font-variant: small-caps;
+	font-size: x-large;
+	border-radius: 15px;
+	background: #0099ff;
+
+}
+
+legend {
+	font-family: "Lucida Grande";
+	font-size: large;
+	color: #000085;	
+}
+
+#navmenu ul {
+	display: inline;
+}
+
+label.error { 
+	display: block; 
+	margin: 10px 0; 
+	color: red;
+	
+}
+
