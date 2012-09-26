@@ -1,0 +1,119 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Family History</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css" />"
+	$('body').scrollTop(1);
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+
+<body>
+
+	<div data-theme="e" data-role="page" data-position="fixed" id="home">
+	
+		<div data-role="header" data-position="fixed" data-theme="e">
+			<h1 id="index">Diabetes History</h1>
+		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="../MIU_B/index.html" data-role="button" data-theme="b">B APP</a></li>				
+					<li><a href="ghpages.txt" data-role="button" data-theme="b">g-h pages</a></li>
+					<li><a href="index.html" data-role="button" data-theme="b">Home</a></li>
+				</ul>
+			</div>
+		</div>
+		<div align="center" data-role="content">
+			<img src="images/CTA.jpg" width=75%></img>
+			<p>Intended to bring health awareness to younger generations, this app is a resource for cataloging medical info.</p>
+			<p><a href="additem.html" data-theme="b" data-role="button" data-icon="arrow-r" data-iconpos="right">ADD YOUR HISTORY</a></p>
+		</div>
+		<div data-role="collapsible-set">
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Diabetes</h3>
+						<p>If you don't eat right, you can get diabetes</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Sex</h3>
+						<p>Everybody has sex, you're either one type or the other</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Medical Checkup Date</h3>
+						<p>I hope its been recent</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Select family's side</h3>
+						<p>Your side is obviously healthier</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Eating Habits<h3>
+						<p>Are you on a seafood diet?</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Exercise Habits</h3>
+						<p>Walking from the couch to the fridge is my favorite type of exercise</p>]
+				</div>
+				<div><a href="feed.html" data-role="button" data-ajax="false" data-theme="e">Google News Feed - Health</a></div>
+			
+		</div>
+	</div>
+	
+	<div data-role="page" id="second" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Second Page</h1>
+				
+		</div>
+
+
+	<div data-role="page" id="favorite" data-add-back-btn="true">
+	
+	<div data-role="header" data-position="fixed">
+			<h1>Favorites</h1>
+				
+		</div>
+		<div data-role="content">
+			<p>Favorites</p>
+	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="second">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#favorite" data-icon="star" class="ui-btn-active">Favorite</a></li>
+					<li><a href="#change" data-icon="gear">Change</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+
+				</ul>
+			</div>
+		</div>	
+	</div>	
+	
+	<div data-role="page" id="soon" data-add-back-btn="true">
+		<h1>COMING SOON</h1>
+	</div>
+
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<script src="js/libs/jquery.validate.mins.js"></script>
+	<script src="js/json.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
