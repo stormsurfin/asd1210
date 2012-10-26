@@ -1,35 +1,24 @@
-// MIU 1209
+// Project 1
+// Advanced Scalable Data Infrastructures
 // Abraham Kowitz
-window.addEventListener('load', function() {
-    setTimeout(scrollTo, 0, 0, 1);
-}, false);
-// Wait until the DOM is ready.
 
-$(document).ready(function(){
+$('#home').on('pageinit', function(){
+	var familyForm = $('#familyHistForm');
+		familyForm.validate({
+		invalidHandler: function(form, validator){
+		},
+		submitHandler: function(){
+		storeData();
+		}
+	});
 	
-	var cform = $('#contactForm');
-	
-		cform.validate({
-			invalidHandler: function(form, validator){},
-			submitHandler: function(){}
-				var data = cform.serializeArray();
-					
-		});
-		
-		
+	// addItem code 
+	$('#displayData').on('click', getData);
+	$('#clearData').on('click', clearLocal);
 
 });
 
-
-window.addEventListener("DOMContentLoaded", function(){
-
-	// getElementById Function
-	function $(x){
-		var theElement = document.getElementById(x);
-		return theElement;
-	}
-
-	// Create select field element and populate with options.
+// Create select field element and populate with options.
 	function makeCats(){
 		var formTag = document.getElementsByTagName("form"),
 			selectLi = $('familySelect'),
@@ -371,6 +360,4 @@ window.addEventListener("DOMContentLoaded", function(){
 
 	var save = $('submit');
 	save.addEventListener("click", validate);
-	
-	
 });
